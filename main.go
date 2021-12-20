@@ -1,28 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"learn-go/concurrent"
+	"time"
+)
 
 func main() {
-	naturals := make(chan int)
-	squares := make(chan int)
-
-	go func() {
-		for x := 0; x < 10; x++ {
-			naturals <- x
-		}
-		close(naturals)
-	}()
-
-	go func() {
-		for x := range naturals {
-			squares <- x * x
-		}
-		close(squares)
-	}()
-
-	for {
-		for x := range squares {
-			fmt.Println(x)
-		}
-	}
+	go concurrent.Spinner(100 * time.Millisecond)
+	const n = 45
+	fibN := concurrent.Fib(n)
+	fmt.Printf("\rFibonacci(%d) = %d\n", n, fibN)
 }
