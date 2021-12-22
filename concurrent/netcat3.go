@@ -1,4 +1,4 @@
-package main
+package concurrent
 
 import (
 	"io"
@@ -7,11 +7,12 @@ import (
 	"os"
 )
 
-func main() {
+func Call3() {
 	conn, err := net.Dial("tcp", "localhost:8888")
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer conn.Close()
 
 	done := make(chan struct{})
 	go func() {
@@ -21,12 +22,5 @@ func main() {
 	}()
 
 	mustCopy(conn, os.Stdin)
-	conn.Close()
 	<-done
-}
-
-func mustCopy(dst io.Writer, src io.Reader) {
-	if _, err := io.Copy(dst, src); err != nil {
-		log.Fatal(err)
-	}
 }

@@ -9,6 +9,7 @@
         <function importPath="fmt" name="Println" />
         <function importPath="fmt" name="Print" />
         <function importPath="io" name="Copy" />
+        <function importPath="fmt" name="Fprintln" />
       </functions>
       <methods>
         <method importPath="hash" receiver="Hash" name="Write" />
@@ -22,6 +23,7 @@
         <method importPath="strings" receiver="*Builder" name="WriteRune" />
         <method importPath="math/rand" receiver="*Rand" name="Read" />
         <method importPath="net" receiver="Conn" name="Close" />
+        <method importPath="os" receiver="*File" name="Close" />
       </methods>
     </inspection_tool>
   </profile>
