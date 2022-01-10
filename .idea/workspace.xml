@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9458fae6-bd1a-4bb1-81ac-5ce2def0870c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learn-go.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrent/channel/pipline.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrent/channel/pipline_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/clock1.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clocksrv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/clock1_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clocksrv_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/echo.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echosrv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/echo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echosrv_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/netcat1.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clockcli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/netcat1_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clockcli_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/netcat2.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echocli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/netcat2_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echocli_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/netcat3.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/netcat3_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/spinner.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/spinner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/spinner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/spinner_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file:///usr/local/Cellar/go/1.17.5/libexec" />
   <component name="Git.Settings">
@@ -24,21 +41,101 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="22dv0jfo1MCTgYTLU2nZFgXb86u" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/concurrent/channel" />
+      <recent name="$PROJECT_DIR$/concurrent/goroutine" />
+      <recent name="$PROJECT_DIR$/concurrent/echo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.Test_pipline3 in learn-go/concurrent/channel">
+    <configuration name="go build learn-go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learn-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="learn-go" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_pipline1 in learn-go/concurrent/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learn-go" />
+      <working_directory value="$PROJECT_DIR$/concurrent/channel" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="learn-go/concurrent/channel" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_pipline1\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_pipline3 in learn-go/concurrent/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learn-go" />
+      <working_directory value="$PROJECT_DIR$/concurrent/channel" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="learn-go/concurrent/channel" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_pipline3\E$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build learn-go" />
+      <item itemvalue="Go Test.Test_pipline1 in learn-go/concurrent/channel" />
+      <item itemvalue="Go Test.Test_pipline3 in learn-go/concurrent/channel" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.Test_pipline3 in learn-go/concurrent/channel" />
+        <item itemvalue="Go Test.Test_pipline1 in learn-go/concurrent/channel" />
+        <item itemvalue="Go Build.go build learn-go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

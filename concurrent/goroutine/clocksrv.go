@@ -1,4 +1,4 @@
-package concurrent
+package goroutine
 
 import (
 	"io"
@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func answer() {
+func clockRsp() {
 	listener, err := net.Listen("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)

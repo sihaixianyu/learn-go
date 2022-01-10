@@ -1,4 +1,4 @@
-package concurrent
+package goroutine
 
 import (
 	"bufio"
@@ -16,7 +16,7 @@ func echo(c net.Conn, shout string, delay time.Duration) {
 	fmt.Fprintln(c, "\t", strings.ToLower(shout))
 }
 
-func handleConn2(c net.Conn) {
+func echoRsp(c net.Conn) {
 	input := bufio.NewScanner(c)
 	for input.Scan() {
 		go echo(c, input.Text(), 1*time.Second)

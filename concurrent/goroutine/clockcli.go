@@ -1,4 +1,4 @@
-package concurrent
+package goroutine
 
 import (
 	"io"
@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func call() {
+func clockReq() {
 	conn, err := net.Dial("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)

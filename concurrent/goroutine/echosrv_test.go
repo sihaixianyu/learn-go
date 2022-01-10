@@ -1,4 +1,4 @@
-package concurrent
+package goroutine
 
 import (
 	"log"
@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func Test_echo(t *testing.T) {
+func Test_echoRsp(t *testing.T) {
 	listener, err := net.Listen("tcp", "localhost:8888")
 	if err != nil {
 		log.Fatal(err)
@@ -17,7 +17,7 @@ func Test_echo(t *testing.T) {
 		if err != nil {
 			log.Print(err)
 		}
-		//go handleConn2(conn)
-		handleConn2(conn)
+		//go echoRsp(conn)
+		echoRsp(conn)
 	}
 }

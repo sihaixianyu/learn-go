@@ -1,4 +1,4 @@
-package concurrent
+package goroutine
 
 import (
 	"log"
@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func Call2() {
+func echoReq() {
 	conn, err := net.Dial("tcp", "localhost:8900")
 	if err != nil {
 		log.Fatal()
