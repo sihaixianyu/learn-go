@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func Test_clockRsp(t *testing.T) {
-	clockRsp()
+func TestClockResp(t *testing.T) {
+	ClockResp()
 }

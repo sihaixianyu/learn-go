@@ -5,22 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9458fae6-bd1a-4bb1-81ac-5ce2def0870c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/concurrent/channel/pipline.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concurrent/channel/pipline_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrent/selects/cuntdown.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrent/selects/cuntdown_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trap/forrange.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trap/forrange_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/clock1.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clocksrv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/clock1_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clocksrv_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/echo.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echosrv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/echo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echosrv_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/netcat1.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clockcli.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/netcat1_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clockcli_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/netcat2.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echocli.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/netcat2_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echocli_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/netcat3.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/netcat3_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/spinner.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/spinner.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrent/spinner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/spinner_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/channel/pipline.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/channel/pipline.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/channel/pipline_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/channel/pipline_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/clockcli.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clockcli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/clockcli_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clockcli_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/clocksrv.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clocksrv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/clocksrv_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/clocksrv_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/echocli.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echocli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/echocli_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echocli_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/echosrv.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echosrv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/echosrv_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/echosrv_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrent/goroutine/spinner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrent/goroutine/spinner_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generic/constraints.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generic/function.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generic/function_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +44,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -53,6 +67,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -75,7 +90,7 @@
       <recent name="$PROJECT_DIR$/concurrent/echo" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_pipline3 in learn-go/concurrent/channel">
+  <component name="RunManager" selected="Go Build.go build learn-go">
     <configuration name="go build learn-go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learn-go" />
       <working_directory value="$PROJECT_DIR$" />
@@ -85,40 +100,68 @@
       <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_pipline1 in learn-go/concurrent/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCountDown3 in learn-go/concurrent/selects" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learn-go" />
-      <working_directory value="$PROJECT_DIR$/concurrent/channel" />
+      <working_directory value="$PROJECT_DIR$/concurrent/selects" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="learn-go/concurrent/channel" />
+      <package value="learn-go/concurrent/selects" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_pipline1\E$" />
+      <pattern value="^\QTestCountDown3\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_pipline3 in learn-go/concurrent/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_countDown in learn-go/concurrent/selects" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learn-go" />
-      <working_directory value="$PROJECT_DIR$/concurrent/channel" />
+      <working_directory value="$PROJECT_DIR$/concurrent/selects" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="learn-go/concurrent/channel" />
+      <package value="learn-go/concurrent/selects" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_pipline3\E$" />
+      <pattern value="^\QTest_countDown\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_countDown2 in learn-go/concurrent/selects" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learn-go" />
+      <working_directory value="$PROJECT_DIR$/concurrent/selects" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="learn-go/concurrent/selects" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_countDown2\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_randomTraverse in learn-go/trap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learn-go" />
+      <working_directory value="$PROJECT_DIR$/trap" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="learn-go/trap" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_randomTraverse\E$" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.go build learn-go" />
-      <item itemvalue="Go Test.Test_pipline1 in learn-go/concurrent/channel" />
-      <item itemvalue="Go Test.Test_pipline3 in learn-go/concurrent/channel" />
+      <item itemvalue="Go Test.Test_randomTraverse in learn-go/trap" />
+      <item itemvalue="Go Test.Test_countDown in learn-go/concurrent/selects" />
+      <item itemvalue="Go Test.Test_countDown2 in learn-go/concurrent/selects" />
+      <item itemvalue="Go Test.TestCountDown3 in learn-go/concurrent/selects" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test_pipline3 in learn-go/concurrent/channel" />
-        <item itemvalue="Go Test.Test_pipline1 in learn-go/concurrent/channel" />
         <item itemvalue="Go Build.go build learn-go" />
+        <item itemvalue="Go Test.TestCountDown3 in learn-go/concurrent/selects" />
+        <item itemvalue="Go Test.Test_countDown2 in learn-go/concurrent/selects" />
+        <item itemvalue="Go Test.Test_countDown in learn-go/concurrent/selects" />
+        <item itemvalue="Go Test.Test_randomTraverse in learn-go/trap" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +179,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

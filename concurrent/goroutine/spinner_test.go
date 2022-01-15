@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func Test_fib(t *testing.T) {
+func TestFib(t *testing.T) {
 	go Spinner(100 * time.Millisecond)
 	const n = 45
 	fibN := Fib(n)

@@ -2,7 +2,7 @@ package channel
 
 import "fmt"
 
-func pipline1() {
+func Pipline() {
 	naturals := make(chan int)
 	squares := make(chan int)
 
@@ -24,7 +24,7 @@ func pipline1() {
 	}
 }
 
-func pipline2() {
+func Pipline2() {
 	naturals := make(chan int)
 	squares := make(chan int)
 
@@ -47,7 +47,7 @@ func pipline2() {
 	}
 }
 
-func pipline3() {
+func Pipline3() {
 	naturals := make(chan int)
 	squares := make(chan int)
 

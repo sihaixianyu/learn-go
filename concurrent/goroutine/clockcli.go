@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func clockReq() {
+func ClockReq() {
 	conn, err := net.Dial("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)

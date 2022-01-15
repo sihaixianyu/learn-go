@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func echoReq() {
+func EchoReq() {
 	conn, err := net.Dial("tcp", "localhost:8900")
 	if err != nil {
 		log.Fatal()

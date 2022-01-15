@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func Test_echoRsp(t *testing.T) {
+func TestEchoResp(t *testing.T) {
 	listener, err := net.Listen("tcp", "localhost:8888")
 	if err != nil {
 		log.Fatal(err)
@@ -17,7 +17,7 @@ func Test_echoRsp(t *testing.T) {
 		if err != nil {
 			log.Print(err)
 		}
-		//go echoRsp(conn)
-		echoRsp(conn)
+		//go EchoResp(conn)
+		EchoResp(conn)
 	}
 }

@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func clockRsp() {
+func ClockResp() {
 	listener, err := net.Listen("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)

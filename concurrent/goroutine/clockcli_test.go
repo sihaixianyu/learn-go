@@ -2,6 +2,6 @@ package goroutine
 
 import "testing"
 
-func Test_clockReq(t *testing.T) {
-	clockReq()
+func TestClockReq(t *testing.T) {
+	ClockReq()
 }
