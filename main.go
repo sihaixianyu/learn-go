@@ -1,7 +1,7 @@
 package main
 
-import "learn-go/concurrent/selects"
+import "fmt"
 
 func main() {
-	selects.CountDown3()
+	fmt.Println("Hello!")
 }
