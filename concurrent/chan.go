@@ -7,7 +7,7 @@ import (
 
 // In this example, the worker has been synchronized through channel.
 func chanForSync() {
-	done := make(chan int, 0)
+	done := make(chan int)
 
 	for i := 0; i < 2; i++ {
 		go func(i int) {
