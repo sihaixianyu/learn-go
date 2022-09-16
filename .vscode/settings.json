@@ -1,3 +1,6 @@
 {
     "go.testTimeout": "5s",
+    "go.testEnvVars": {
+        "-count": 1,
+    }
 }

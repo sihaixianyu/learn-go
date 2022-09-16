@@ -2,40 +2,46 @@ package concurrent
 
 import (
 	"fmt"
+	"sync"
 	"sync/atomic"
-	"time"
 )
 
 var routineNum int
 var optNum int
 
 func init() {
-	routineNum = 6
-	optNum = 1000
+	routineNum = 10
+	optNum = 100
 }
 
 func ModifyWithoutAtomic() {
 	cnt := int32(0)
+	wg := sync.WaitGroup{}
 
 	for i := 0; i < routineNum; i++ {
+		wg.Add(1)
+
 		go func(i int) {
 			for j := 0; j < optNum; j++ {
 				cnt += 1
 				fmt.Printf("Cnt was modified to %d by goroutine: %d\n", cnt, i)
 			}
+
+			wg.Done()
 		}(i)
 	}
 
-	for cnt != 6000 {
-		time.Sleep(time.Second)
-	}
+	wg.Wait()
 	fmt.Println("Done!")
 }
 
 func ModifyWithAtomic() {
 	cnt := int32(0)
+	wg := sync.WaitGroup{}
 
 	for i := 0; i < routineNum; i++ {
+		wg.Add(1)
+
 		go func(i int) {
 			for j := 0; j < optNum; j++ {
 				for {
@@ -46,11 +52,11 @@ func ModifyWithAtomic() {
 					}
 				}
 			}
+
+			wg.Done()
 		}(i)
 	}
 
-	for cnt != int32(routineNum*optNum) {
-		time.Sleep(time.Second)
-	}
+	wg.Wait()
 	fmt.Println("Done!")
 }
