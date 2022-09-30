@@ -1,4 +1,4 @@
-package redis
+package types
 
 import (
 	"testing"
@@ -13,6 +13,6 @@ func TestStringExample(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
-	
+
 	assert.Equal(t, "tingxuan", val)
 }

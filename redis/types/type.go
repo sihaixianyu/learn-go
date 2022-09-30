@@ -1,4 +1,4 @@
-package redis
+package types
 
 func StringExample() {
 	err := client.Set(ctx, "name", "tingxuan", 0).Err()
