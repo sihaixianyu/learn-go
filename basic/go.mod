@@ -1,3 +1,3 @@
-module learn-go
+module basic
 
 go 1.19
